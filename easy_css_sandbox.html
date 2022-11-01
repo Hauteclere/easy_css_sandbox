@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Easy CSS Sandbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="height: 100%">
+        <style>
+            * {margin: 0; padding: 0;}
+        </style>
+
+        <div id="css-sandbox" style="margin: 5px; padding: 5px;">
+                <h1 id="page-heading">Easy CSS Sandbox</h1>
+                <small style="all: initial; color: grey; font-size: small;">^H1 heading, id="page-heading"</small>
+            <p id="main-paragraph">
+                Edit the CSS in the black area below to test out how it changes the document! 
+            </p>
+            <small style="all: initial; color: grey; font-size: small;">^paragraph, id="main-paragraph"</small>
+            <div id="box-container">
+                <div class='box red'></div>
+                <div class='box green'></div>
+                <div class='box blue'></div>
+            </div>
+            <small style="all: initial; color: grey; font-size: small;">^div, id="box-container". Contains 3 more divs, all with class "box". One of the three has an additional class "red", one has the extra class "green", and one has the extra class "blue".</small>
+        </div>
+
+        <style contenteditable="true" style="display: block; white-space: pre; width: 100%; margin: 0; background: black; color: white;">
+            #css-sandbox {
+                background: white;
+                height: 50%;
+            }
+
+            #page-heading {
+                margin-top: 20px;
+            }
+
+            #main-paragraph {
+                margin-top: 40px;
+            }
+            
+            #box-container {
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                border: 1px solid black;
+            }
+
+            .box {
+                height: 40px;
+                width: 40px;
+                margin: 15px;
+                border: 1px solid black;
+            }
+
+            .red {
+                background-color: red;
+            }
+
+            .green {
+                background-color: green;
+            }
+
+            .blue {
+                background-color: blue;
+            }
+        </style>
+    </body>
+</html>
